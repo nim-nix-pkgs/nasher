@@ -11,7 +11,6 @@
   inputs.src-nasher-0_8_0.ref   = "refs/tags/0.8.0";
   inputs.src-nasher-0_8_0.owner = "squattingmonk";
   inputs.src-nasher-0_8_0.repo  = "nasher.nim";
-  inputs.src-nasher-0_8_0.dir   = "";
   inputs.src-nasher-0_8_0.type  = "github";
   
   inputs."neverwinter".owner = "nim-nix-pkgs";

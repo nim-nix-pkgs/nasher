@@ -11,7 +11,6 @@
   inputs.src-nasher-master.ref   = "refs/heads/master";
   inputs.src-nasher-master.owner = "squattingmonk";
   inputs.src-nasher-master.repo  = "nasher.nim";
-  inputs.src-nasher-master.dir   = "";
   inputs.src-nasher-master.type  = "github";
   
   inputs."neverwinter".owner = "nim-nix-pkgs";
