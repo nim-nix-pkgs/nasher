@@ -7,11 +7,11 @@
   inputs.flakeNimbleLib.type  = "github";
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
-  inputs.src-nasher-0_11_8.flake = false;
-  inputs.src-nasher-0_11_8.ref   = "refs/tags/0.11.8";
-  inputs.src-nasher-0_11_8.owner = "squattingmonk";
-  inputs.src-nasher-0_11_8.repo  = "nasher.nim";
-  inputs.src-nasher-0_11_8.type  = "github";
+  inputs.src-nasher-0_17_1.flake = false;
+  inputs.src-nasher-0_17_1.ref   = "refs/tags/0.17.1";
+  inputs.src-nasher-0_17_1.owner = "squattingmonk";
+  inputs.src-nasher-0_17_1.repo  = "nasher.nim";
+  inputs.src-nasher-0_17_1.type  = "github";
   
   inputs."neverwinter".owner = "nim-nix-pkgs";
   inputs."neverwinter".ref   = "master";
@@ -29,16 +29,24 @@
   inputs."glob".inputs.nixpkgs.follows = "nixpkgs";
   inputs."glob".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
+  inputs."nwnt".owner = "nim-nix-pkgs";
+  inputs."nwnt".ref   = "master";
+  inputs."nwnt".repo  = "nwnt";
+  inputs."nwnt".dir   = "v1_3_3";
+  inputs."nwnt".type  = "github";
+  inputs."nwnt".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."nwnt".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
     lib  = flakeNimbleLib.lib;
-    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nasher-0_11_8"];
+    args = ["self" "nixpkgs" "flakeNimbleLib" "src-nasher-0_17_1"];
     over = if builtins.pathExists ./override.nix 
            then { override = import ./override.nix; }
            else { };
   in lib.mkRefOutput (over // {
     inherit self nixpkgs ;
-    src  = deps."src-nasher-0_11_8";
+    src  = deps."src-nasher-0_17_1";
     deps = builtins.removeAttrs deps args;
     meta = builtins.fromJSON (builtins.readFile ./meta.json);
   } );
