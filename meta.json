@@ -3160,10 +3160,7 @@
   "license": "MIT",
   "web": "https://github.com/squattingmonk/nasher.nim",
   "refs": [
-    "refs/heads/cfg-subsections",
-    "refs/heads/fix-issue-90",
     "refs/heads/master",
-    "refs/heads/refactor",
     "refs/heads/toml",
     "refs/tags/0.1.0",
     "refs/tags/0.10.0",
