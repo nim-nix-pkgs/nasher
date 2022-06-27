@@ -375,7 +375,7 @@
         "neverwinter": "neverwinter",
         "nixpkgs": "nixpkgs",
         "nwnt": "nwnt",
-        "src-nasher-master": "src-nasher-master"
+        "src-nasher-0_17_3": "src-nasher-0_17_3"
       }
     },
     "src-docopt-v0_6_8": {
@@ -446,19 +446,19 @@
         "type": "github"
       }
     },
-    "src-nasher-master": {
+    "src-nasher-0_17_3": {
       "flake": false,
       "locked": {
-        "lastModified": 1655905342,
-        "narHash": "sha256-C2cTIc3U/KfSOhgy5TwQVRKbLGFGKSCTgi3izTVToiw=",
+        "lastModified": 1651845389,
+        "narHash": "sha256-FYXcF/IfnwNHieDESwW9q6nHqwB2oKbnJKdYFiR+hss=",
         "owner": "squattingmonk",
         "repo": "nasher.nim",
-        "rev": "836e6084def3a4dc61ffde8f8eed509a17789421",
+        "rev": "10f8ed4a6315a6dc47373c6beebb274f890b8e84",
         "type": "github"
       },
       "original": {
         "owner": "squattingmonk",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/0.17.3",
         "repo": "nasher.nim",
         "type": "github"
       }

@@ -1,5 +1,32 @@
 {
   "nodes": {
+    "blarg": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-blarg-0_1_0": "src-blarg-0_1_0"
+      },
+      "locked": {
+        "dir": "0_1_0",
+        "lastModified": 1656300802,
+        "narHash": "sha256-W7Hk8foO8kdjWktJ2Z3ByTiD6p9nXhiHSJag0Y5+R3E=",
+        "owner": "nim-nix-pkgs",
+        "repo": "blarg",
+        "rev": "b91103d2fa190e0cea313410de71e57bd3200342",
+        "type": "github"
+      },
+      "original": {
+        "dir": "0_1_0",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "blarg",
+        "type": "github"
+      }
+    },
     "docopt": {
       "inputs": {
         "flakeNimbleLib": [
@@ -370,12 +397,30 @@
     },
     "root": {
       "inputs": {
+        "blarg": "blarg",
         "flakeNimbleLib": "flakeNimbleLib",
         "glob": "glob",
         "neverwinter": "neverwinter",
         "nixpkgs": "nixpkgs",
         "nwnt": "nwnt",
-        "src-nasher-master": "src-nasher-master"
+        "src-nasher-0_18_2": "src-nasher-0_18_2"
+      }
+    },
+    "src-blarg-0_1_0": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652348367,
+        "narHash": "sha256-SP7X6tkZZzxLofU9nXWqP37UwShLKQpe5zZOWa8+gJU=",
+        "owner": "squattingmonk",
+        "repo": "blarg",
+        "rev": "59ebae2ed50a177c0047359f9d49054a26992910",
+        "type": "github"
+      },
+      "original": {
+        "owner": "squattingmonk",
+        "ref": "refs/tags/0.1.0",
+        "repo": "blarg",
+        "type": "github"
       }
     },
     "src-docopt-v0_6_8": {
@@ -446,7 +491,7 @@
         "type": "github"
       }
     },
-    "src-nasher-master": {
+    "src-nasher-0_18_2": {
       "flake": false,
       "locked": {
         "lastModified": 1655905342,
@@ -458,7 +503,7 @@
       },
       "original": {
         "owner": "squattingmonk",
-        "ref": "refs/heads/master",
+        "ref": "refs/tags/0.18.2",
         "repo": "nasher.nim",
         "type": "github"
       }
